@@ -27,6 +27,12 @@ h1 {
   color: #333;
 }
 
+.contador {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 16px;
+}
+
 ul {
   list-style: none;
   margin-bottom: 24px;
