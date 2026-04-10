@@ -10,10 +10,15 @@
   <div class="container">
   <h1>Lista de Tarefas</h1>
   <ul id="lista">
-    <li>Estudar versionamento de código</li>
-    <li>Aprender sobre Git Flow</li>
-    <li>Praticar commits convencionais</li>
+    <li>Estudar versionamento de código <button class="btn-remover" onclick="this.parentElement.remove()">Remover</button></li>
+    <li>Aprender sobre Git Flow <button class="btn-remover" onclick="this.parentElement.remove()">Remover</button></li>
+    <li>Praticar commits convencionais <button class="btn-remover" onclick="this.parentElement.remove()">Remover</button></li>
   </ul>
+  <div class="form-adicionar">
+    <input id="nova-tarefa" type="text" placeholder="Nova tarefa..." />
+    <button id="btn-adicionar">Adicionar</button>
   </div>
+  </div>
+  <script src="app.js"></script>
 </body>
 </html>
