@@ -37,4 +37,11 @@ input.addEventListener('keydown', (e) => {
   if (e.key === 'Enter') btnAdicionar.click();
 });
 
+// Inicializa os itens já existentes no HTML com botão de remover
+lista.querySelectorAll('li').forEach((li) => {
+  const texto = li.textContent.trim();
+  const novoItem = criarItem(texto);
+  li.replaceWith(novoItem);
+});
+
 atualizarContador();
