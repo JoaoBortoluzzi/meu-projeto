@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+  <h1>Lista de Tarefas</h1>
+  <p id="contador" class="contador"></p>
+  <ul id="lista">
+    <li>Estudar versionamento de código <button class="btn-remover" onclick="this.parentElement.remove()">Remover</button></li>
+    <li>Aprender sobre Git Flow <button class="btn-remover" onclick="this.parentElement.remove()">Remover</button></li>
+    <li>Praticar commits convencionais <button class="btn-remover" onclick="this.parentElement.remove()">Remover</button></li>
+  </ul>
+  <div class="form-adicionar">
+    <input id="nova-tarefa" type="text" placeholder="Nova tarefa..." />
+    <button id="btn-adicionar">Adicionar</button>
+  </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
